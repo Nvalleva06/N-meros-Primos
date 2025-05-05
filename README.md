@@ -77,6 +77,9 @@ J -- Sí --> L[Escribir número]
 L --> M(Fin)
 K --> M
 D --> M
+```
 
+# BUENO MUCHAS GRACIAS.
+![image](https://github.com/user-attachments/assets/f6f03dc2-83c5-455e-9cd2-43624fa1f367)
 
    
