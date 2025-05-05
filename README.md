@@ -62,18 +62,21 @@ Porque si un número tiene un divisor mayor que su raíz cuadrada, ya tendría u
 
 ```mermaid
 flowchart TD
-   flowchart TD
-    A[Escribir: Ingrese un número mayor que 1] --> B[Leer límite]
-    B --> C{límite < 2}
-    C -- No --> D[Escribir: No hay números primos menores que 2]
-    C -- Sí --> E[numero ← 2]
-    E --> F[divisor ← divisor + 1]
-    F --> G{divisor ≤ límite}
-    G -- No --> H[Salir del ciclo]
-    G -- Sí --> I[divisor ← Falso] --> F
-    H --> J{es_primo}
-    J -- No --> K[Salir del ciclo]
-    J -- Sí --> L[Escribir número]
-    L --> M[Fin]
-    K --> M
-    D --> M
+INICIO(Inicio) --> A[Escribir: Ingrese un número mayor o igual que 2]
+A --> B[Leer límite]
+B --> C{límite < 2}
+C -- No --> D[Escribir: No hay números primos menores que 2]
+C -- Sí --> E[numero ← 2]
+E --> F[divisor ← divisor + 1]
+F --> G{divisor ≤ límite}
+G -- No --> H[Salir del ciclo]
+G -- Sí --> I[divisor ← Falso] --> F
+H --> J{es_primo}
+J -- No --> K[Salir del ciclo]
+J -- Sí --> L[Escribir número]
+L --> M(Fin)
+K --> M
+D --> M
+
+
+   
