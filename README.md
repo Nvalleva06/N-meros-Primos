@@ -60,6 +60,11 @@ Porque si un número tiene un divisor mayor que su raíz cuadrada, ya tendría u
 
 ## Diagrama de flujo
 
+Teniendo en cuenta que:
+- Limite es n, osea el número hasta donde vamos a buscar los números primos.
+- Número es x, el número el cual estamos verificando si es primo o no.
+- Divisor es y, posible divisor de x.
+
 ```mermaid
 flowchart TD
 INICIO(Inicio) --> A[Escribir: Ingrese un número mayor o igual que 2]
